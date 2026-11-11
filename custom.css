@@ -1,0 +1,60 @@
+/*Inline block for altmetric badges, will keep the badges in the same line*/
+span.__dimensions_badge_embed__, div.altmetric-embed {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.hero-logo {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.hero-gif {
+  width: min(95vw, 1500px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-intro {
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.hero-intro h2 {
+  color: #0B2E59;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.research-card {
+  background: #f7fbff;
+  border: 1px solid #d8e8f7;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 6px 20px rgba(11, 46, 89, 0.08);
+}
+
+.research-card h3 {
+  color: #0B2E59;
+}
+
+@media (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-intro {
+    padding: 0 1rem;
+  }
+}
